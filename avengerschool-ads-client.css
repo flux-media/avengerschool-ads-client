@@ -1,0 +1,30 @@
+.avengerschool-banner-wrapper {
+    float: left;
+    margin: 0 1em 1em 0;
+    max-width: 270px;
+}
+
+.avengerschool-banner-wrapper .header {
+	font-size: 0.7em;
+    border-top: 2px solid black;
+    padding: 0.3em;
+    font-weight: 800;
+    color: #222;
+}
+
+.avengerschool-banner-wrapper .footer {
+	font-size: 0.8em;
+    border-bottom: 1px solid #999;
+    padding: 0.2em;
+    margin: -0.5em 0;
+}
+
+@media (max-width: 600px) {
+	.avengerschool-banner-wrapper {
+		max-width: 150px;
+	}
+
+	.avengerschool-banner-wrapper .header {
+		font-size: 0.5em;
+	}
+}
