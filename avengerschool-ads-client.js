@@ -67,12 +67,12 @@
 					})
 				);
 
-				// Find the proper paragraph with at least 120 characters.
+				// Find the proper paragraph with at least 120 characters, not having a <blockquote> parent.
 				var $entryContentPs = $this.find('.entry-content').find('p'),
 					indices = [];
 				$entryContentPs.each(function(index) {
 					var $this = $(this);
-					if ($this.text().length > 120) {
+					if ($this.text().length > 120 && $this.parent()[0].tagName != 'BLOCKQUOTE') {
 						indices.push(index);
 					}
 				});
@@ -84,7 +84,6 @@
 		});
 	};
 
-	// TODO: Debug.
 	$(document).ready(function() {
 		// Initialize.
 		$('main').appendAvengerschoolAds();
