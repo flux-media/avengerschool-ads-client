@@ -91,5 +91,10 @@
 		$(window).on('ppss_infinity_loaded', function(event, url, targetId) {
 			$('#' + targetId).appendAvengerschoolAds();
 		});
+
+		// Track the events.
+		$('body').on('click', '.avengerschool-banner-wrapper a', function(e) {
+			ga('send', 'event', 'Banner', 'click', 'Avengerschool');
+		});
 	});
 }( jQuery ));
