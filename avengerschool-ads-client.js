@@ -7,11 +7,12 @@ function ASCourse (course) {
 	this.thumbnail = course.thumbnail;
 	this.category = course.category;
 }
-ASCourse.prototype.isVisible = function() {
+ASCourse.prototype.isAvailable = function() {
 	var MS_PER_HOUR = 1000 * 60 * 60, now = new Date();
 	return this.date.valueOf() - now.valueOf() > 2 * MS_PER_HOUR;
 }
 
+var DEFAULT_TITLE = 'ㅍㅍㅅㅅ의 현업 전문가 실무 특강';
 var courses = [];
 courses.push(new ASCourse({
 	title: '재무제표만 똑바로 봐도 기업이 보인다: 회계 정보의 올바른 이해',
@@ -101,6 +102,9 @@ courses.push(new ASCourse({
 	}
 
 	$.fn.appendAvengerschoolAds = function( options ) {
+		// For loops.
+		var i, length;
+
 		var settings = $.extend({
 			apiDataAction: 'get_ad_banner',
 			apiMethod: 'GET',
@@ -127,7 +131,8 @@ courses.push(new ASCourse({
 
 		// Match categories.
 		var $categoriesAnchors = $categoriesWrapper.find('a'),
-			categorySlug = '', categories = [], coursesVisible = [];
+			categorySlug = '', categories = [],
+			coursesAvailableInContent = [], coursesAvailableInFooter = [];
 		$categoriesAnchors.each(function() {
 			var category = $(this).text();
 			switch (category) {
@@ -176,20 +181,50 @@ courses.push(new ASCourse({
 			}
 		});
 
-		for (var i = 0, length = courses.length; i < length; i++) {
+		for (i = 0, length = courses.length; i < length; i++) {
 			var course = courses[i];
-			if (course.category == categorySlug && course.isVisible()) {
-				coursesVisible.push(course);
+			if (course.isAvailable()) {
+				if (course.category == categorySlug) {
+					coursesAvailableInContent.push(course);	
+				} else {
+					coursesAvailableInFooter.push(course);
+				}
 			}
 		}
 
-		if (coursesVisible.length > 0) {
-			var courseToShow = coursesVisible[Math.floor(Math.random() * coursesVisible.length)];
-			$entryContentPs.eq(indices[pIndex]).prepend(
-				getBanner('ㅍㅍㅅㅅ의 현업 전문가 실무 특강', courseToShow.url, courseToShow.thumbnail, courseToShow.title)
-			);
+		// If available, insert a banner to content.
+		if (coursesAvailableInContent.length > 0) {
+			var index = Math.floor(Math.random() * coursesAvailableInContent.length),
+				courseInContent = coursesAvailableInContent[index],
+				$bannerInContent = getBanner(DEFAULT_TITLE, courseInContent.url, courseInContent.thumbnail, courseInContent.title);
+			$entryContentPs.eq(indices[pIndex]).prepend($bannerInContent);
+
+			// Exclude the banner from the available array for the future use.
+			coursesAvailableInContent.splice(index, 1);
 		}
 
+		var courseInFooter, $bannerInFooter;
+		// If available, insert a banner to footer.
+		// 1) If there banners available for the above, choose the random one from them.
+		// cf) It belongs to the related category.
+		if (coursesAvailableInContent.length > 0) {
+			courseInFooter = coursesAvailableInContent[Math.floor(Math.random() * coursesAvailableInContent.length)];
+			$bannerInFooter = getBanner(DEFAULT_TITLE, courseInFooter.url, courseInFooter.thumbnail, courseInFooter.title);
+		}
+		// 2) If not, get any random available one.
+		// cf) Its category isn't related to those of the post.
+		else {
+			if (coursesAvailableInFooter.length > 0) {
+				courseInFooter = coursesAvailableInFooter[Math.floor(Math.random() * coursesAvailableInFooter.length)];
+				$bannerInFooter = getBanner(DEFAULT_TITLE, courseInFooter.url, courseInFooter.thumbnail, courseInFooter.title);
+			} else {
+				// TODO: Add a default avengerschool banner.
+				$bannerInFooter = null;
+			}
+		}
+		console.log($bannerInFooter);
+		$this.find('.avengerschool-banner-place').append($bannerInFooter);
+		
 		// TODO: Disabled for Avengerschool server performance.
 		// Send categories to API to get banner info.
 		// Get categories as an array string.

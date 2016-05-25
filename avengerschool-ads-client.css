@@ -1,7 +1,18 @@
 .avengerschool-banner-wrapper {
-    float: left;
-    margin: 0 1em 1em 0;
     max-width: 270px;
+}
+
+.inter-inner .avengerschool-banner-wrapper {
+    margin: 0 auto;
+}
+
+.entry-content .avengerschool-banner-wrapper {
+    float: right;
+    margin: 0 0 1em 1em;
+}
+
+.avengerschool-banner-wrapper a {
+    color: #e8554e;
 }
 
 .avengerschool-banner-wrapper .header {
@@ -10,6 +21,7 @@
     padding: 0.3em;
     font-weight: 800;
     color: #222;
+    text-align: left;
 }
 
 .avengerschool-banner-wrapper .footer {
@@ -17,14 +29,15 @@
     border-bottom: 1px solid #999;
     padding: 0.2em;
     margin: -0.5em 0;
+    text-align: left;
 }
 
 @media (max-width: 600px) {
-	.avengerschool-banner-wrapper {
+	.entry-content .avengerschool-banner-wrapper {
 		max-width: 150px;
 	}
 
-	.avengerschool-banner-wrapper .header {
+	.entry-content .avengerschool-banner-wrapper .header {
 		font-size: 0.5em;
 	}
 }
