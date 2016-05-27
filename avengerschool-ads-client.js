@@ -150,6 +150,7 @@ courses.push(new ASCourse({
 					break;
 
 				case '테크':
+				case '마케팅':
 				case '비즈니스':
 				case '인터뷰':
 					categorySlug = Math.random() < .5 ? '비즈니스': '마케팅';
