@@ -17,115 +17,115 @@ var courses = [];
 courses.push(new ASCourse({
 	title: '미디어로 자생하기: 아웃스탠딩이 살아남는 법',
 	url: 'https://avengerschool.com/product/how-to-survive-as-media/',
-	thumbnail: 'https://avengerschool.com/wp-content/uploads/2016/06/shutterstock_364248185-300x200.jpg',
+	thumbnail: 'https://avengerschool-media.s3.amazonaws.com/uploads/2016/06/shutterstock_364248185-300x200.jpg',
 	category: '미디어',
 	date: '2016-06-14T19:30'}));
 courses.push(new ASCourse({
 	title: '타겟 고객의 동선을 분석하는 키워드 리서치와 채널-콘텐츠 전략',
 	url: 'https://avengerschool.com/product/keyword-research/',
-	thumbnail: 'https://avengerschool.com/wp-content/uploads/2016/06/%EB%B0%95%EC%84%B8%EC%9A%A9-%ED%94%BC%EC%B2%98-300x200.jpg',
+	thumbnail: 'https://avengerschool-media.s3.amazonaws.com/uploads/2016/06/%EB%B0%95%EC%84%B8%EC%9A%A9-%ED%94%BC%EC%B2%98-300x200.jpg',
 	category: 'SEO',
 	date: '2016-06-15T19:30'}));
 courses.push(new ASCourse({
 	title: '클릭을 유도하는 이메일 마케팅 전략: 우리가 무시해온 ROI 끝판왕',
 	url: 'https://avengerschool.com/product/roi-based-email-marketing-strategy/',
-	thumbnail: 'https://avengerschool.com/wp-content/uploads/2016/06/%EC%A1%B0%EC%84%B1%EB%8F%84-%ED%94%BC%EC%B2%98-2-300x200.jpg',
+	thumbnail: 'https://avengerschool-media.s3.amazonaws.com/uploads/2016/06/%EC%A1%B0%EC%84%B1%EB%8F%84-%ED%94%BC%EC%B2%98-2-300x200.jpg',
 	category: '콘텐츠',
 	date: '2016-06-16T19:30'}));
 courses.push(new ASCourse({
 	title: '‘동네변호사 조들호’ 작가에게서 배우는 웹툰 기획 전략',
 	url: 'https://avengerschool.com/product/webtoon-planning-strategy/',
-	thumbnail: 'https://avengerschool.com/wp-content/uploads/2016/06/ggdfsdaf-300x200.png',
+	thumbnail: 'https://avengerschool-media.s3.amazonaws.com/uploads/2016/06/ggdfsdaf-300x200.png',
 	category: '문화기획',
 	date: '2016-06-18T14:00'}));
 courses.push(new ASCourse({
 	title: '병원을 위한 혁신 마케팅 그리고 창조적인 브랜드 만들기',
 	url: 'https://avengerschool.com/product/creative-hospital-branding/',
-	thumbnail: 'https://avengerschool.com/wp-content/uploads/2016/06/%EA%B9%80%EC%88%98%EC%A0%95-%ED%94%BC%EC%B2%98-300x200.jpg',
+	thumbnail: 'https://avengerschool-media.s3.amazonaws.com/uploads/2016/06/%EA%B9%80%EC%88%98%EC%A0%95-%ED%94%BC%EC%B2%98-300x200.jpg',
 	category: '병원',
 	date: '2016-06-19T14:00'}));
 courses.push(new ASCourse({
 	title: '스타트업 홍보 여신이 말하는 “작은 회사를 살리는 홍보”',
 	url: 'https://avengerschool.com/product/startup-marketing/',
-	thumbnail: 'https://avengerschool.com/wp-content/uploads/2016/06/%EC%9D%B4%EB%AF%B8%EB%82%98-%ED%94%BC%EC%B2%98-300x200.jpg',
+	thumbnail: 'https://avengerschool-media.s3.amazonaws.com/uploads/2016/06/%EC%9D%B4%EB%AF%B8%EB%82%98-%ED%94%BC%EC%B2%98-300x200.jpg',
 	category: '미디어',
 	date: '2016-06-21T19:30'}));
 courses.push(new ASCourse({
 	title: 'SEO 제대로 활용하기: SEO의 역할과 가치, 그리고 올바른 활용',
 	url: 'https://avengerschool.com/product/seo-management/',
-	thumbnail: 'https://avengerschool.com/wp-content/uploads/2016/06/%EC%9D%B4%ED%99%98%EC%84%A0-%ED%94%BC%EC%B2%98-300x200.jpg',
+	thumbnail: 'https://avengerschool-media.s3.amazonaws.com/uploads/2016/06/%EC%9D%B4%ED%99%98%EC%84%A0-%ED%94%BC%EC%B2%98-300x200.jpg',
 	category: 'SEO',
 	date: '2016-06-22T19:30'}));
 courses.push(new ASCourse({
 	title: '대학내일이 말하는 “공유되는 모바일 콘텐츠 만드는 법”',
 	url: 'https://avengerschool.com/product/how-to-create-mobile-contents/',
-	thumbnail: 'https://avengerschool.com/wp-content/uploads/2016/06/%EC%9D%B4%EC%A0%95%EC%84%AD-%ED%94%BC%EC%B2%98-3-300x200.jpg',
+	thumbnail: 'https://avengerschool-media.s3.amazonaws.com/uploads/2016/06/%EC%9D%B4%EC%A0%95%EC%84%AD-%ED%94%BC%EC%B2%98-3-300x200.jpg',
 	category: '콘텐츠',
 	date: '2016-06-23T19:30'}));
 courses.push(new ASCourse({
 	title: '파스텔뮤직에서 배우는 ‘공연, 음반 기획과 운영’',
 	url: 'https://avengerschool.com/product/records-management/',
-	thumbnail: 'https://avengerschool.com/wp-content/uploads/2016/06/info_slider_pastel-1-300x200.png',
+	thumbnail: 'https://avengerschool-media.s3.amazonaws.com/uploads/2016/06/info_slider_pastel-1-300x200.png',
 	category: '문화기획',
 	date: '2016-06-25T14:00'}));
 courses.push(new ASCourse({
 	title: '병원 매출을 바꾸려면, 직원을 인재로 만들어라: 핵심 가치의 공유와 직무 환경 조성',
 	url: 'https://avengerschool.com/product/hr-management-for-hospitals/',
-	thumbnail: 'https://avengerschool.com/wp-content/uploads/2016/06/%EB%B0%95%EC%A7%80%EC%97%B0-%ED%94%BC%EC%B2%98-300x200.jpg',
+	thumbnail: 'https://avengerschool-media.s3.amazonaws.com/uploads/2016/06/%EB%B0%95%EC%A7%80%EC%97%B0-%ED%94%BC%EC%B2%98-300x200.jpg',
 	category: '병원',
 	date: '2016-06-26T14:00'}));
 courses.push(new ASCourse({
 	title: '마케팅과 브랜딩을 위한 뉴미디어와 MCN 활용법',
 	url: 'https://avengerschool.com/product/new-media-and-mcn-for-marketing/',
-	thumbnail: 'https://avengerschool.com/wp-content/uploads/2016/06/%EC%9D%B4%EC%9D%80%EC%98%81-%ED%94%BC%EC%B2%98-300x200.jpg',
+	thumbnail: 'https://avengerschool-media.s3.amazonaws.com/uploads/2016/06/%EC%9D%B4%EC%9D%80%EC%98%81-%ED%94%BC%EC%B2%98-300x200.jpg',
 	category: '미디어',
 	date: '2016-06-28T19:30'}));
 courses.push(new ASCourse({
 	title: '1분만에 와닿는 문서작성의 핵심역량: VISUAL WRITING',
 	url: 'https://avengerschool.com/product/visual-writing/',
-	thumbnail: 'https://avengerschool.com/wp-content/uploads/2016/06/%EA%B9%80%EC%9A%A9%EC%84%9D-%ED%94%BC%EC%B2%98-300x200.jpg',
+	thumbnail: 'https://avengerschool-media.s3.amazonaws.com/uploads/2016/06/%EA%B9%80%EC%9A%A9%EC%84%9D-%ED%94%BC%EC%B2%98-300x200.jpg',
 	category: '비즈니스',
 	date: '2016-06-29T19:30'}));
 courses.push(new ASCourse({
 	title: '좋아요 52만 ‘고탱의 비디오’ 운영자의 온라인 비디오 기획-제작법',
 	url: 'https://avengerschool.com/product/online-video-production/',
-	thumbnail: 'https://avengerschool.com/wp-content/uploads/2016/06/%EA%B3%A0%ED%83%9C%EC%9B%90-%ED%94%BC%EC%B2%98-300x200.jpg',
+	thumbnail: 'https://avengerschool-media.s3.amazonaws.com/uploads/2016/06/%EA%B3%A0%ED%83%9C%EC%9B%90-%ED%94%BC%EC%B2%98-300x200.jpg',
 	category: '콘텐츠',
 	date: '2016-06-30T19:30'}));
 courses.push(new ASCourse({
 	title: '물총축제, 맥주축제 제작자가 말하는 축제 기획의 모든 것',
 	url: 'https://avengerschool.com/product/festival-planning/',
-	thumbnail: 'https://avengerschool.com/wp-content/uploads/2016/06/%ED%95%9C%EA%B8%B8%EC%9A%B0-%ED%94%BC%EC%B2%98-2-300x200.jpg',
+	thumbnail: 'https://avengerschool-media.s3.amazonaws.com/uploads/2016/06/%ED%95%9C%EA%B8%B8%EC%9A%B0-%ED%94%BC%EC%B2%98-2-300x200.jpg',
 	category: '문화기획',
 	date: '2016-07-02T14:00'}));
 courses.push(new ASCourse({
 	title: '사라지면 고객이 아쉬워 할 ‘존재감 있는 병원’이 되는 법',
 	url: 'https://avengerschool.com/product/on-hospital-marketing/',
-	thumbnail: 'https://avengerschool.com/wp-content/uploads/2016/06/%EC%B5%9C%EB%AA%85%ED%9D%AC-%ED%94%BC%EC%B2%98-300x200.jpg',
+	thumbnail: 'https://avengerschool-media.s3.amazonaws.com/uploads/2016/06/%EC%B5%9C%EB%AA%85%ED%9D%AC-%ED%94%BC%EC%B2%98-300x200.jpg',
 	category: '병원',
 	date: '2016-07-03T14:00'}));
 courses.push(new ASCourse({
 	title: '분산미디어 환경과 대응 전략: 미디어와 기업의 나아갈 길',
 	url: 'https://avengerschool.com/product/future-for-media-and-companies/',
-	thumbnail: 'https://avengerschool.com/wp-content/uploads/2016/06/shutterstock_403444858-300x200.jpg',
+	thumbnail: 'https://avengerschool-media.s3.amazonaws.com/uploads/2016/06/shutterstock_403444858-300x200.jpg',
 	category: '미디어',
 	date: '2016-07-05T19:30'}));
 courses.push(new ASCourse({
 	title: '보고서의 신이 말하는 ‘보고서 작성 대원칙’',
 	url: 'https://avengerschool.com/product/the-broad-principle-for-reports/',
-	thumbnail: 'https://avengerschool.com/wp-content/uploads/2016/06/%EB%B0%95%EA%B2%BD%EC%88%98-%ED%94%BC%EC%B2%98-300x200.jpg',
+	thumbnail: 'https://avengerschool-media.s3.amazonaws.com/uploads/2016/06/%EB%B0%95%EA%B2%BD%EC%88%98-%ED%94%BC%EC%B2%98-300x200.jpg',
 	category: '비즈니스',
 	date: '2016-07-06T19:30'}));
 courses.push(new ASCourse({
 	title: '‘해먹남녀’ 대표의 데이터를 활용한 콘텐츠 마케팅과 비즈니스 전략',
 	url: 'https://avengerschool.com/product/contents-marketing-with-data/',
-	thumbnail: 'https://avengerschool.com/wp-content/uploads/2016/06/%EC%A0%95%EC%A7%80%EC%9B%85-%ED%94%BC%EC%B2%98-300x200.jpg',
+	thumbnail: 'https://avengerschool-media.s3.amazonaws.com/uploads/2016/06/%EC%A0%95%EC%A7%80%EC%9B%85-%ED%94%BC%EC%B2%98-300x200.jpg',
 	category: '콘텐츠',
 	date: '2016-07-07T19:30'}));
 courses.push(new ASCourse({
 	title: '연극 ‘그 자식 사랑했네’, 뮤지컬 ‘빨래’ 제작자가 말하는 공연-뮤지컬 기획의 모든 것',
 	url: 'https://avengerschool.com/product/musical-concert-planning/',
-	thumbnail: 'https://avengerschool.com/wp-content/uploads/2016/06/%EC%9D%B4%EC%A7%80%ED%98%B8-%ED%94%BC%EC%B2%98-300x200.jpg',
+	thumbnail: 'https://avengerschool-media.s3.amazonaws.com/uploads/2016/06/%EC%9D%B4%EC%A7%80%ED%98%B8-%ED%94%BC%EC%B2%98-300x200.jpg',
 	category: '문화기획',
 	date: '2016-07-09T14:00'}));
 
