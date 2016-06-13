@@ -179,7 +179,8 @@ courses.push(new ASCourse({
 		}, options);
 
 		var $this = $(this),
-			$categoriesWrapper = $this.find(settings.categoriesWrapper);
+			$categoriesWrapper = $this.find(settings.categoriesWrapper),
+			isBannerExcludedInContent = $this.find('article').hasClass('as_banner_off');
 		if ($categoriesWrapper.length <= 0) {
 			return;
 		}
@@ -260,7 +261,7 @@ courses.push(new ASCourse({
 		}
 
 		// If available, insert a banner to content.
-		if (coursesAvailableInContent.length > 0) {
+		if (!isBannerExcludedInContent && coursesAvailableInContent.length > 0) {
 			var index = Math.floor(Math.random() * coursesAvailableInContent.length),
 				courseInContent = coursesAvailableInContent[index],
 				$bannerInContent = getBanner(DEFAULT_TITLE, courseInContent.url, courseInContent.thumbnail, courseInContent.title);
@@ -289,7 +290,6 @@ courses.push(new ASCourse({
 				$bannerInFooter = null;
 			}
 		}
-		console.log($bannerInFooter);
 		$this.find('.avengerschool-banner-place').append($bannerInFooter);
 		
 		// TODO: Disabled for Avengerschool server performance.
